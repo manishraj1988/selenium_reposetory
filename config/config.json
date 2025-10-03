@@ -1,0 +1,29 @@
+{
+  "appiumServer": {
+    "url": "http://localhost:4723"
+  },
+  "android": {
+    "platformName": "Android",
+    "platformVersion": "11.0",
+    "deviceName": "emulator-5554",
+    "appPackage": "com.example.myapp",
+    "appActivity": ".MainActivity",
+    "automationName": "UiAutomator2"
+  },
+  "ios": {
+    "platformName": "iOS",
+    "platformVersion": "15.0",
+    "deviceName": "iPhone 13",
+    "bundleId": "com.example.myapp",
+    "automationName": "XCUITest"
+  },
+  "timeouts": {
+    "implicit": 10,
+    "explicit": 30
+  },
+  "test": {
+    "platform": "android",
+    "environment": "staging",
+    "baseUrl": "https://staging-api.example.com"
+  }
+}
